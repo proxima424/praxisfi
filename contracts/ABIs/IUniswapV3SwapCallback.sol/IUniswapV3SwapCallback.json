@@ -39,17 +39,17 @@
   },
   "ast": {
     "absolutePath": "src/praxisUNISWAP/IUniswapV3SwapCallback.sol",
-    "id": 27244,
+    "id": 27282,
     "exportedSymbols": {
       "IUniswapV3SwapCallback": [
-        27243
+        27281
       ]
     },
     "nodeType": "SourceUnit",
     "src": "45:1255:29",
     "nodes": [
       {
-        "id": 27231,
+        "id": 27269,
         "nodeType": "PragmaDirective",
         "src": "45:23:29",
         "literals": [
@@ -60,16 +60,16 @@
         ]
       },
       {
-        "id": 27243,
+        "id": 27281,
         "nodeType": "ContractDefinition",
         "src": "214:1085:29",
         "nodes": [
           {
-            "id": 27242,
+            "id": 27280,
             "nodeType": "FunctionDefinition",
             "src": "1156:141:29",
             "documentation": {
-              "id": 27233,
+              "id": 27271,
               "nodeType": "StructuredDocumentation",
               "src": "253:898:29",
               "text": "@notice Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap.\n @dev In the implementation you must pay the pool tokens owed for the swap.\n The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory.\n amount0Delta and amount1Delta can both be 0 if no tokens were swapped.\n @param amount0Delta The amount of token0 that was sent (negative) or must be received (positive) by the pool by\n the end of the swap. If positive, the callback must send that amount of token0 to the pool.\n @param amount1Delta The amount of token1 that was sent (negative) or must be received (positive) by the pool by\n the end of the swap. If positive, the callback must send that amount of token1 to the pool.\n @param data Any data passed through by the caller via the IUniswapV3PoolActions#swap call"
@@ -81,17 +81,17 @@
             "name": "uniswapV3SwapCallback",
             "nameLocation": "1165:21:29",
             "parameters": {
-              "id": 27240,
+              "id": 27278,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27235,
+                  "id": 27273,
                   "mutability": "mutable",
                   "name": "amount0Delta",
                   "nameLocation": "1203:12:29",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27242,
+                  "scope": 27280,
                   "src": "1196:19:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -100,7 +100,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 27234,
+                    "id": 27272,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1196:6:29",
@@ -113,12 +113,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27237,
+                  "id": 27275,
                   "mutability": "mutable",
                   "name": "amount1Delta",
                   "nameLocation": "1232:12:29",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27242,
+                  "scope": 27280,
                   "src": "1225:19:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -127,7 +127,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 27236,
+                    "id": 27274,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1225:6:29",
@@ -140,12 +140,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27239,
+                  "id": 27277,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "1269:4:29",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27242,
+                  "scope": 27280,
                   "src": "1254:19:29",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -154,7 +154,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 27238,
+                    "id": 27276,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1254:5:29",
@@ -169,12 +169,12 @@
               "src": "1186:93:29"
             },
             "returnParameters": {
-              "id": 27241,
+              "id": 27279,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1296:0:29"
             },
-            "scope": 27243,
+            "scope": 27281,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -186,18 +186,18 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 27232,
+          "id": 27270,
           "nodeType": "StructuredDocumentation",
           "src": "70:144:29",
           "text": "@title Callback for IUniswapV3PoolActions#swap\n @notice Any contract that calls IUniswapV3PoolActions#swap must implement this interface"
         },
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          27243
+          27281
         ],
         "name": "IUniswapV3SwapCallback",
         "nameLocation": "224:22:29",
-        "scope": 27244,
+        "scope": 27282,
         "usedErrors": []
       }
     ],

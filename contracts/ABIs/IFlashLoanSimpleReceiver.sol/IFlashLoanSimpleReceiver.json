@@ -83,23 +83,23 @@
   },
   "ast": {
     "absolutePath": "src/praxisFLASHLOAN/IFlashLoanSimpleReceiver.sol",
-    "id": 26284,
+    "id": 26322,
     "exportedSymbols": {
       "IFlashLoanSimpleReceiver": [
-        26283
+        26321
       ],
       "IPool": [
-        26920
+        26958
       ],
       "IPoolAddressesProvider": [
-        27129
+        27167
       ]
     },
     "nodeType": "SourceUnit",
     "src": "37:1419:25",
     "nodes": [
       {
-        "id": 26249,
+        "id": 26287,
         "nodeType": "PragmaDirective",
         "src": "37:23:25",
         "literals": [
@@ -110,22 +110,22 @@
         ]
       },
       {
-        "id": 26251,
+        "id": 26289,
         "nodeType": "ImportDirective",
         "src": "62:68:25",
         "absolutePath": "src/praxisFLASHLOAN/IPoolAddressesProvider.sol",
         "file": "./IPoolAddressesProvider.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 26284,
-        "sourceUnit": 27130,
+        "scope": 26322,
+        "sourceUnit": 27168,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 26250,
+              "id": 26288,
               "name": "IPoolAddressesProvider",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 27129,
+              "referencedDeclaration": 27167,
               "src": "70:22:25",
               "typeDescriptions": {}
             },
@@ -135,22 +135,22 @@
         "unitAlias": ""
       },
       {
-        "id": 26253,
+        "id": 26291,
         "nodeType": "ImportDirective",
         "src": "131:34:25",
         "absolutePath": "src/praxisFLASHLOAN/IPool.sol",
         "file": "./IPool.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 26284,
-        "sourceUnit": 26921,
+        "scope": 26322,
+        "sourceUnit": 26959,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 26252,
+              "id": 26290,
               "name": "IPool",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 26920,
+              "referencedDeclaration": 26958,
               "src": "139:5:25",
               "typeDescriptions": {}
             },
@@ -160,16 +160,16 @@
         "unitAlias": ""
       },
       {
-        "id": 26283,
+        "id": 26321,
         "nodeType": "ContractDefinition",
         "src": "396:1059:25",
         "nodes": [
           {
-            "id": 26270,
+            "id": 26308,
             "nodeType": "FunctionDefinition",
             "src": "1092:202:25",
             "documentation": {
-              "id": 26255,
+              "id": 26293,
               "nodeType": "StructuredDocumentation",
               "src": "437:650:25",
               "text": " @notice Executes an operation after receiving the flash-borrowed asset\n @dev Ensure that the contract can return the debt + premium, e.g., has\n enough funds to repay and has approved the Pool to pull the total amount\n @param asset The address of the flash-borrowed asset\n @param amount The amount of the flash-borrowed asset\n @param premium The fee of the flash-borrowed asset\n @param initiator The address of the flashloan initiator\n @param params The byte-encoded params passed when initiating the flashloan\n @return True if the execution of the operation succeeds, false otherwise"
@@ -181,17 +181,17 @@
             "name": "executeOperation",
             "nameLocation": "1101:16:25",
             "parameters": {
-              "id": 26266,
+              "id": 26304,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26257,
+                  "id": 26295,
                   "mutability": "mutable",
                   "name": "asset",
                   "nameLocation": "1135:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26270,
+                  "scope": 26308,
                   "src": "1127:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -200,7 +200,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 26256,
+                    "id": 26294,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1127:7:25",
@@ -214,12 +214,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26259,
+                  "id": 26297,
                   "mutability": "mutable",
                   "name": "amount",
                   "nameLocation": "1158:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26270,
+                  "scope": 26308,
                   "src": "1150:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -228,7 +228,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 26258,
+                    "id": 26296,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1150:7:25",
@@ -241,12 +241,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26261,
+                  "id": 26299,
                   "mutability": "mutable",
                   "name": "premium",
                   "nameLocation": "1182:7:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26270,
+                  "scope": 26308,
                   "src": "1174:15:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -255,7 +255,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 26260,
+                    "id": 26298,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1174:7:25",
@@ -268,12 +268,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26263,
+                  "id": 26301,
                   "mutability": "mutable",
                   "name": "initiator",
                   "nameLocation": "1207:9:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26270,
+                  "scope": 26308,
                   "src": "1199:17:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -282,7 +282,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 26262,
+                    "id": 26300,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1199:7:25",
@@ -296,12 +296,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26265,
+                  "id": 26303,
                   "mutability": "mutable",
                   "name": "params",
                   "nameLocation": "1241:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26270,
+                  "scope": 26308,
                   "src": "1226:21:25",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -310,7 +310,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 26264,
+                    "id": 26302,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1226:5:25",
@@ -325,17 +325,17 @@
               "src": "1117:136:25"
             },
             "returnParameters": {
-              "id": 26269,
+              "id": 26307,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26268,
+                  "id": 26306,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26270,
+                  "scope": 26308,
                   "src": "1288:4:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -344,7 +344,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 26267,
+                    "id": 26305,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1288:4:25",
@@ -358,13 +358,13 @@
               ],
               "src": "1287:6:25"
             },
-            "scope": 26283,
+            "scope": 26321,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 26276,
+            "id": 26314,
             "nodeType": "FunctionDefinition",
             "src": "1300:101:25",
             "functionSelector": "0542975c",
@@ -374,44 +374,44 @@
             "name": "ADDRESSES_PROVIDER",
             "nameLocation": "1309:18:25",
             "parameters": {
-              "id": 26271,
+              "id": 26309,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1327:2:25"
             },
             "returnParameters": {
-              "id": 26275,
+              "id": 26313,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26274,
+                  "id": 26312,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26276,
+                  "scope": 26314,
                   "src": "1377:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27129",
+                    "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
                     "typeString": "contract IPoolAddressesProvider"
                   },
                   "typeName": {
-                    "id": 26273,
+                    "id": 26311,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 26272,
+                      "id": 26310,
                       "name": "IPoolAddressesProvider",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27129,
+                      "referencedDeclaration": 27167,
                       "src": "1377:22:25"
                     },
-                    "referencedDeclaration": 27129,
+                    "referencedDeclaration": 27167,
                     "src": "1377:22:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27129",
+                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
                       "typeString": "contract IPoolAddressesProvider"
                     }
                   },
@@ -420,13 +420,13 @@
               ],
               "src": "1376:24:25"
             },
-            "scope": 26283,
+            "scope": 26321,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 26282,
+            "id": 26320,
             "nodeType": "FunctionDefinition",
             "src": "1407:46:25",
             "functionSelector": "7535d246",
@@ -436,44 +436,44 @@
             "name": "POOL",
             "nameLocation": "1416:4:25",
             "parameters": {
-              "id": 26277,
+              "id": 26315,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1420:2:25"
             },
             "returnParameters": {
-              "id": 26281,
+              "id": 26319,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26280,
+                  "id": 26318,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26282,
+                  "scope": 26320,
                   "src": "1446:5:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPool_$26920",
+                    "typeIdentifier": "t_contract$_IPool_$26958",
                     "typeString": "contract IPool"
                   },
                   "typeName": {
-                    "id": 26279,
+                    "id": 26317,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 26278,
+                      "id": 26316,
                       "name": "IPool",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 26920,
+                      "referencedDeclaration": 26958,
                       "src": "1446:5:25"
                     },
-                    "referencedDeclaration": 26920,
+                    "referencedDeclaration": 26958,
                     "src": "1446:5:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IPool_$26920",
+                      "typeIdentifier": "t_contract$_IPool_$26958",
                       "typeString": "contract IPool"
                     }
                   },
@@ -482,7 +482,7 @@
               ],
               "src": "1445:7:25"
             },
-            "scope": 26283,
+            "scope": 26321,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -494,18 +494,18 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 26254,
+          "id": 26292,
           "nodeType": "StructuredDocumentation",
           "src": "167:228:25",
           "text": " @title IFlashLoanSimpleReceiver\n @author Aave\n @notice Defines the basic interface of a flashloan-receiver contract.\n @dev Implement this interface to develop a flashloan-compatible flashLoanReceiver contract"
         },
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          26283
+          26321
         ],
         "name": "IFlashLoanSimpleReceiver",
         "nameLocation": "406:24:25",
-        "scope": 26284,
+        "scope": 26322,
         "usedErrors": []
       }
     ],

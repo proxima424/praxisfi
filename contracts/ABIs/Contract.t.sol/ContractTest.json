@@ -451,10 +451,10 @@
   },
   "ast": {
     "absolutePath": "test/Contract.t.sol",
-    "id": 27434,
+    "id": 27472,
     "exportedSymbols": {
       "ContractTest": [
-        27433
+        27471
       ],
       "DSTest": [
         2611
@@ -494,7 +494,7 @@
     "src": "39:190:31",
     "nodes": [
       {
-        "id": 27417,
+        "id": 27455,
         "nodeType": "PragmaDirective",
         "src": "39:24:31",
         "literals": [
@@ -505,28 +505,28 @@
         ]
       },
       {
-        "id": 27418,
+        "id": 27456,
         "nodeType": "ImportDirective",
         "src": "65:28:31",
         "absolutePath": "lib/openzeppelin-contracts/lib/forge-std/src/Test.sol",
         "file": "forge-std/Test.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 27434,
+        "scope": 27472,
         "sourceUnit": 7098,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 27433,
+        "id": 27471,
         "nodeType": "ContractDefinition",
         "src": "95:133:31",
         "nodes": [
           {
-            "id": 27424,
+            "id": 27462,
             "nodeType": "FunctionDefinition",
             "src": "131:26:31",
             "body": {
-              "id": 27423,
+              "id": 27461,
               "nodeType": "Block",
               "src": "155:2:31",
               "statements": []
@@ -538,28 +538,28 @@
             "name": "setUp",
             "nameLocation": "140:5:31",
             "parameters": {
-              "id": 27421,
+              "id": 27459,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "145:2:31"
             },
             "returnParameters": {
-              "id": 27422,
+              "id": 27460,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "155:0:31"
             },
-            "scope": 27433,
+            "scope": 27471,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 27432,
+            "id": 27470,
             "nodeType": "FunctionDefinition",
             "src": "163:63:31",
             "body": {
-              "id": 27431,
+              "id": 27469,
               "nodeType": "Block",
               "src": "193:33:31",
               "statements": [
@@ -568,7 +568,7 @@
                     "arguments": [
                       {
                         "hexValue": "74727565",
-                        "id": 27428,
+                        "id": 27466,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -590,7 +590,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 27427,
+                      "id": 27465,
                       "name": "assertTrue",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -604,7 +604,7 @@
                         "typeString": "function (bool)"
                       }
                     },
-                    "id": 27429,
+                    "id": 27467,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -619,7 +619,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 27430,
+                  "id": 27468,
                   "nodeType": "ExpressionStatement",
                   "src": "203:16:31"
                 }
@@ -632,18 +632,18 @@
             "name": "testExample",
             "nameLocation": "172:11:31",
             "parameters": {
-              "id": 27425,
+              "id": 27463,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "183:2:31"
             },
             "returnParameters": {
-              "id": 27426,
+              "id": 27464,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "193:0:31"
             },
-            "scope": 27433,
+            "scope": 27471,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -653,13 +653,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 27419,
+              "id": 27457,
               "name": "Test",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5758,
               "src": "120:4:31"
             },
-            "id": 27420,
+            "id": 27458,
             "nodeType": "InheritanceSpecifier",
             "src": "120:4:31"
           }
@@ -669,14 +669,14 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          27433,
+          27471,
           5758,
           2847,
           2611
         ],
         "name": "ContractTest",
         "nameLocation": "104:12:31",
-        "scope": 27434,
+        "scope": 27472,
         "usedErrors": []
       }
     ],
