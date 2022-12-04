@@ -1,0 +1,545 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ADDRESSES_PROVIDER",
+      "outputs": [
+        {
+          "internalType": "contract IPoolAddressesProvider",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "POOL",
+      "outputs": [
+        {
+          "internalType": "contract IPool",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "premium",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "initiator",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        }
+      ],
+      "name": "executeOperation",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "ADDRESSES_PROVIDER()": "0542975c",
+    "POOL()": "7535d246",
+    "executeOperation(address,uint256,uint256,address,bytes)": "1b11d0ff"
+  },
+  "ast": {
+    "absolutePath": "src/praxisFLASHLOAN/FlashLoanSimpleReceiverBase.sol",
+    "id": 26035,
+    "exportedSymbols": {
+      "FlashLoanSimpleReceiverBase": [
+        26034
+      ],
+      "IFlashLoanSimpleReceiver": [
+        26321
+      ],
+      "IPool": [
+        26958
+      ],
+      "IPoolAddressesProvider": [
+        27167
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:664:22",
+    "nodes": [
+      {
+        "id": 25997,
+        "nodeType": "PragmaDirective",
+        "src": "37:23:22",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 25999,
+        "nodeType": "ImportDirective",
+        "src": "62:72:22",
+        "absolutePath": "src/praxisFLASHLOAN/IFlashLoanSimpleReceiver.sol",
+        "file": "./IFlashLoanSimpleReceiver.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26035,
+        "sourceUnit": 26322,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 25998,
+              "name": "IFlashLoanSimpleReceiver",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26321,
+              "src": "70:24:22",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26001,
+        "nodeType": "ImportDirective",
+        "src": "135:68:22",
+        "absolutePath": "src/praxisFLASHLOAN/IPoolAddressesProvider.sol",
+        "file": "./IPoolAddressesProvider.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26035,
+        "sourceUnit": 27168,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 26000,
+              "name": "IPoolAddressesProvider",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 27167,
+              "src": "143:22:22",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26003,
+        "nodeType": "ImportDirective",
+        "src": "204:34:22",
+        "absolutePath": "src/praxisFLASHLOAN/IPool.sol",
+        "file": "./IPool.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26035,
+        "sourceUnit": 26959,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 26002,
+              "name": "IPool",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26958,
+              "src": "212:5:22",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26034,
+        "nodeType": "ContractDefinition",
+        "src": "369:331:22",
+        "nodes": [
+          {
+            "id": 26010,
+            "nodeType": "VariableDeclaration",
+            "src": "449:67:22",
+            "baseFunctions": [
+              26314
+            ],
+            "constant": false,
+            "functionSelector": "0542975c",
+            "mutability": "immutable",
+            "name": "ADDRESSES_PROVIDER",
+            "nameLocation": "498:18:22",
+            "overrides": {
+              "id": 26009,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "489:8:22"
+            },
+            "scope": 26034,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+              "typeString": "contract IPoolAddressesProvider"
+            },
+            "typeName": {
+              "id": 26008,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 26007,
+                "name": "IPoolAddressesProvider",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 27167,
+                "src": "449:22:22"
+              },
+              "referencedDeclaration": 27167,
+              "src": "449:22:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                "typeString": "contract IPoolAddressesProvider"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 26014,
+            "nodeType": "VariableDeclaration",
+            "src": "522:36:22",
+            "baseFunctions": [
+              26320
+            ],
+            "constant": false,
+            "functionSelector": "7535d246",
+            "mutability": "immutable",
+            "name": "POOL",
+            "nameLocation": "554:4:22",
+            "overrides": {
+              "id": 26013,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "545:8:22"
+            },
+            "scope": 26034,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IPool_$26958",
+              "typeString": "contract IPool"
+            },
+            "typeName": {
+              "id": 26012,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 26011,
+                "name": "IPool",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 26958,
+                "src": "522:5:22"
+              },
+              "referencedDeclaration": 26958,
+              "src": "522:5:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IPool_$26958",
+                "typeString": "contract IPool"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 26033,
+            "nodeType": "FunctionDefinition",
+            "src": "565:133:22",
+            "body": {
+              "id": 26032,
+              "nodeType": "Block",
+              "src": "610:88:22",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 26022,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 26020,
+                      "name": "ADDRESSES_PROVIDER",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26010,
+                      "src": "620:18:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                        "typeString": "contract IPoolAddressesProvider"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 26021,
+                      "name": "provider",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26017,
+                      "src": "641:8:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                        "typeString": "contract IPoolAddressesProvider"
+                      }
+                    },
+                    "src": "620:29:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                      "typeString": "contract IPoolAddressesProvider"
+                    }
+                  },
+                  "id": 26023,
+                  "nodeType": "ExpressionStatement",
+                  "src": "620:29:22"
+                },
+                {
+                  "expression": {
+                    "id": 26030,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 26024,
+                      "name": "POOL",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26014,
+                      "src": "659:4:22",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IPool_$26958",
+                        "typeString": "contract IPool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "id": 26026,
+                              "name": "provider",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 26017,
+                              "src": "672:8:22",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                                "typeString": "contract IPoolAddressesProvider"
+                              }
+                            },
+                            "id": 26027,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "getPool",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 27088,
+                            "src": "672:16:22",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                              "typeString": "function () view external returns (address)"
+                            }
+                          },
+                          "id": 26028,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "672:18:22",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 26025,
+                        "name": "IPool",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 26958,
+                        "src": "666:5:22",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IPool_$26958_$",
+                          "typeString": "type(contract IPool)"
+                        }
+                      },
+                      "id": 26029,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "666:25:22",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IPool_$26958",
+                        "typeString": "contract IPool"
+                      }
+                    },
+                    "src": "659:32:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPool_$26958",
+                      "typeString": "contract IPool"
+                    }
+                  },
+                  "id": 26031,
+                  "nodeType": "ExpressionStatement",
+                  "src": "659:32:22"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 26018,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26017,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nameLocation": "600:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26033,
+                  "src": "577:31:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                    "typeString": "contract IPoolAddressesProvider"
+                  },
+                  "typeName": {
+                    "id": 26016,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26015,
+                      "name": "IPoolAddressesProvider",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 27167,
+                      "src": "577:22:22"
+                    },
+                    "referencedDeclaration": 27167,
+                    "src": "577:22:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPoolAddressesProvider_$27167",
+                      "typeString": "contract IPoolAddressesProvider"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "576:33:22"
+            },
+            "returnParameters": {
+              "id": 26019,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "610:0:22"
+            },
+            "scope": 26034,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 26005,
+              "name": "IFlashLoanSimpleReceiver",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 26321,
+              "src": "418:24:22"
+            },
+            "id": 26006,
+            "nodeType": "InheritanceSpecifier",
+            "src": "418:24:22"
+          }
+        ],
+        "canonicalName": "FlashLoanSimpleReceiverBase",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 26004,
+          "nodeType": "StructuredDocumentation",
+          "src": "240:128:22",
+          "text": " @title FlashLoanSimpleReceiverBase\n @author Aave\n @notice Base contract to develop a flashloan-receiver contract."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          26034,
+          26321
+        ],
+        "name": "FlashLoanSimpleReceiverBase",
+        "nameLocation": "387:27:22",
+        "scope": 26035,
+        "usedErrors": []
+      }
+    ],
+    "license": "AGPL-3.0"
+  },
+  "id": 22
+}

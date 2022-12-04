@@ -1,0 +1,236 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212207b307955934cd0d3ff0f73f2e85be9f12049610345fb372d63e10fad9c7a11dd64736f6c634300080f0033",
+    "sourceMap": "64:374:18:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;64:374:18;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212207b307955934cd0d3ff0f73f2e85be9f12049610345fb372d63e10fad9c7a11dd64736f6c634300080f0033",
+    "sourceMap": "64:374:18:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "ast": {
+    "absolutePath": "src/praxisADDRESSES.sol",
+    "id": 24532,
+    "exportedSymbols": {
+      "praxisADDRESSES": [
+        24531
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:400:18",
+    "nodes": [
+      {
+        "id": 24518,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:18",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 24531,
+        "nodeType": "ContractDefinition",
+        "src": "64:374:18",
+        "nodes": [
+          {
+            "id": 24521,
+            "nodeType": "VariableDeclaration",
+            "src": "94:87:18",
+            "constant": true,
+            "mutability": "constant",
+            "name": "AAVE_POOL_POLYGON",
+            "nameLocation": "111:17:18",
+            "scope": 24531,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 24519,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "94:7:18",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307837393461363133353844363834353539344639346463314442303241323532623562343831346144",
+              "id": 24520,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "139:42:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x794a61358D6845594F94dc1DB02A252b5b4814aD"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 24524,
+            "nodeType": "VariableDeclaration",
+            "src": "187:74:18",
+            "constant": true,
+            "mutability": "constant",
+            "name": "WETH_POLYGON",
+            "nameLocation": "204:12:18",
+            "scope": 24531,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 24522,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "187:7:18",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307837636542323366443662433061644435394536326163323535373832373063466631623966363139",
+              "id": 24523,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "219:42:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 24527,
+            "nodeType": "VariableDeclaration",
+            "src": "267:74:18",
+            "constant": true,
+            "mutability": "constant",
+            "name": "USDC_POLYGON",
+            "nameLocation": "284:12:18",
+            "scope": 24531,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 24525,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "267:7:18",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307832373931426361316632646534363631454438384133304339394137613934343941613834313734",
+              "id": 24526,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "299:42:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 24530,
+            "nodeType": "VariableDeclaration",
+            "src": "347:88:18",
+            "constant": true,
+            "mutability": "constant",
+            "name": "UNISWAP_SWAPROUTER",
+            "nameLocation": "364:18:18",
+            "scope": 24531,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 24528,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "347:7:18",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307845353932343237413041456365393244653345646565314631384530313537433035383631353634",
+              "id": 24529,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "393:42:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0xE592427A0AEce92De3Edee1F18E0157C05861564"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "praxisADDRESSES",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          24531
+        ],
+        "name": "praxisADDRESSES",
+        "nameLocation": "72:15:18",
+        "scope": 24532,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 18
+}

@@ -1,0 +1,43 @@
+--rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592 --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9
+forge create --rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592  --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9 src/praxisFACTORY.sol:getPrice
+
+constructor(
+        address _addressProvider = Pool-Proxy-Aave    0xc4dCB5126a3AfEd129BC3668Ea19285A9f56D15D
+        ISwapRouter _swapRouter,                      0xE592427A0AEce92De3Edee1F18E0157C05861564
+        address _WETHChainlink,                       0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e
+        address _ERC20WETH,                           0x2e3A2fb8473316A02b8A297B982498E661E1f6f5
+        address _ERC20USDC,                           0xA2025B15a1757311bfD68cb14eaeFCc237AF5b43
+        address _AAVE_POOL_POLYGON                    0x368EedF3f56ad10b9bC57eed4Dac65B26Bb667f6
+    )
+
+0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e 0x2e3A2fb8473316A02b8A297B982498E661E1f6f5 0xA2025B15a1757311bfD68cb14eaeFCc237AF5b43 0x368EedF3f56ad10b9bC57eed4Dac65B26Bb667f6
+forge create --rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592  --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9 src/praxisFACTORY.sol:praxisFACTORY --constructor-args 0xc4dCB5126a3AfEd129BC3668Ea19285A9f56D15D 0xE592427A0AEce92De3Edee1F18E0157C05861564 0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e 0x2e3A2fb8473316A02b8A297B982498E661E1f6f5 0xA2025B15a1757311bfD68cb14eaeFCc237AF5b43 0x368EedF3f56ad10b9bC57eed4Dac65B26Bb667f6
+forge create --rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592  --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9 src/praxisERC20.sol:praxisERC20
+
+
+// cast send 0x2E695b853374513288f2fbD58177ef8BA4c5E1E6  --rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592 --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9 "deployERC20()"
+
+//praxisFACTORY
+Deployer: 0x53478A49d7c16D85082659BCE9EDba5a6FBFd1Cf
+Deployed to: 0x2E695b853374513288f2fbD58177ef8BA4c5E1E6
+Transaction hash: 0x1774189f00a15300aef48f044d736225240d1fa62fa7fbdd33f66b9dab192fac
+
+
+//USDC_POOL
+Deployer: 0x53478A49d7c16D85082659BCE9EDba5a6FBFd1Cf
+Deployed to: 0xF2c53220BfdDd04f0811C1Be70cb49aB31298d8b
+Transaction hash: 0x92a94b2ca5c238f845f72a94c56130c67eabc3244ce945f1edcef10f49ff34d7
+
+//praxisERC20
+Deployer: 0x53478A49d7c16D85082659BCE9EDba5a6FBFd1Cf
+Deployed to: 0xBC61C9ec5e122968cf0103033f338D5f0282BFa5
+Transaction hash: 0x5084879f2ae31650d2c02186bca3e6edfc346c915069779d2e9686db77863734
+
+--rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592 --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9
+
+
+
+
+
+
+forge create --rpc-url https://polygon-rpc.com --private-key 52f669115ae55f2f11b65ea6dfc59c9089f2eedb0c14b70613b47220fd5434a9 src/praxisFACTORY.sol:praxisFACTORY --constructor-args  0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb 0xE592427A0AEce92De3Edee1F18E0157C05861564 0xF9680D99D6C9589e2a93a78A04A279e509205945 0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174 0x794a61358D6845594F94dc1DB02A252b5b4814aD

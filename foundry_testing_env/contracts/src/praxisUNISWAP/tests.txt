@@ -1,0 +1,11 @@
+deploying praxisFACTORY
+deploying praxisERC20
+setPraxisERC20()
+setting praxisFACTORY
+give_Allowance_USDC()
+give_Allowance_WETH()
+get_CONTRACT_VALUE()
+getLatestPrice()
+CALCULATE_TOKENS_TO_MINT()
+
+cast send 0x2E695b853374513288f2fbD58177ef8BA4c5E1E6 --rpc-url https://goerli.infura.io/v3/2eceb1066dae43b899776ae409af6592 --private-key 
