@@ -315,8 +315,6 @@ contract praxisFACTORY is FlashLoanSimpleReceiverBase, Ownable {
         uint256 amount_borrow = 2 * (amount_deposited) * 100;
         amount_borrow = amount_borrow / 98 ;
         borrow_USDC_Pool(address(this), amount_borrow);
-        IERC20(0xA2025B15a1757311bfD68cb14eaeFCc237AF5b43).transfer(0xF2c53220BfdDd04f0811C1Be70cb49aB31298d8b,amount_borrow);
-        USDC_POOL(0xF2c53220BfdDd04f0811C1Be70cb49aB31298d8b).requestWETH(amount_borrow);
         swapExactOutputSingle(
          2*amount_deposited,
          amount_borrow,
@@ -428,7 +426,7 @@ contract praxisFACTORY is FlashLoanSimpleReceiverBase, Ownable {
         return price;
     }
 
-    uint256 decimals = 10 ** 18;
+    uint256 decimals = 10**18;
 
     function gettotalSupply() public view returns(uint256){
         return IERC20(PRAXIS_ERC20).totalSupply();
