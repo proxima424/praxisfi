@@ -1,5 +1,6 @@
 ﻿# Praxis Finance
 Trade with Onchain Perpetual futures built over AAVE's deep liquidity. 
+Refer to this contract [ finalpraxisFACTORY.sol ] in "./contracts/finalpraxisFACTORY.sol"
 
 ## Summary
 
