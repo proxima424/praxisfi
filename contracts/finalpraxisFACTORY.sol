@@ -18,9 +18,6 @@ import {Ownable} from "../src/Ownable.sol";
 import {IPool} from "../src/praxisFLASHLOAN/IPool.sol";
 import {TransferHelper} from "../src/praxisUNISWAP/TransferHelper.sol";
 import {ISwapRouter} from "../src/praxisUNISWAP/ISwapRouter.sol";
-
-import {USDC_POOL} from "../src/USDC_POOL.sol";
-
 import {AggregatorV3Interface} from "./AggregatorV3Interface.sol";
 import {praxisERC20} from "../src/praxisERC20.sol";
 
