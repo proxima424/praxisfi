@@ -160,7 +160,7 @@ While opening a new perpetual position, any trader shall like to get the expecte
 
 For the position which was already created by the user, we attach Proof of Position redirecting towards the polyscan for this transaction. The user also gets information of the amount he has deposited the value of his perp when opened and also the current value, which shall help him take better and swifter decisions. We have also attached a chart of WETH vs USDC to let user understand when he should be taking some decision instead of shifting tabs unnecessarily.
 
-Showing values on Dashboard
+We are also showing the accumulation of important parameters on the dashboard to help trader have a bird’s eye view
 
 We have built the wallet with Rainbow kit and integrated wagmi hooks for connecting the wallet. A user  would not be restricted to metamask for connecting wallet and can go beyond it too. 
 
