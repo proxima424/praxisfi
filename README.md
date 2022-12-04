@@ -3,9 +3,9 @@ Trade with Onchain Perpetual futures built over AAVE's deep liquidity.
 
 ## Summary
 
-Praxis lets traders have onchain perpetual futures over Aave. Praxis will hold leveraged long positions on behalf of users over Aave. Users shall receive corresponding ERC20 tokens representing the perpetual contracts created with a unique minting, redeeming and pricing mechanism for the ERC20 tokens given to represent a position. This mechanism and the utilization rates of Aave shall let us calculate the value of the position by always taking the funding mechanism into consideration (more on this in the later part).
+Praxis lets traders have onchain perpetual futures over Aave. Praxis will hold leveraged long positions on behalf of users over Aave. Users shall receive corresponding ERC20 tokens representing the perpetual contracts created with a unique minting, redeeming and pricing mechanism for the ERC20 tokens given to represent a position. This mechanism and the utilization rates of Aave shall let us calculate the value of the position by always taking the funding mechanism into consideration (more on this in the later part). This will make the leveraged positions tradeable which is not the case for most of the counterparts (most protocols had built leveraged positions on Aave just to earn yield on idle instead of building tradeable positions) 
 
-For this hackathon, Praxis will implement long perpetual positions over Aave with 3x leverage and issue corresponding WETHUP3x tokens to represent the position.  
+For this hackathon, Praxis will implement long perpetual positions over Aave WETH pool, with 3x leverage and issue corresponding WETHUP3x tokens to represent the position.  
 
 *Links of smart contracts deployed on Polygon: 0xa7873dFD4610B22f9C88129d01ABc993653CACD6* 
 
@@ -100,17 +100,27 @@ Initially to start from 0 (for the smart contract of Praxis and not of the user)
 
 Tokens are minted after the opening of the position. For Minting event, collect the values of deposit, borrowing, Total WETHUP of the smart contract, WETH/USDC  price at a state before the position is opened. The amount of WETH to be deposited by user during opening of the position shall help us calculate the increase in deposit and borrowing in the smart contract. We could also get contract value after the opening position as Total deposit of WETH (in USDC) - Total borrowing of USDC. As WETHUP3x price is equal before and after opening the position, we can calculate the number of tokens to be minted for this particular position.  
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f72e834-8a4d-45a6-9d29-b77d4d785b80/Untitled.png)
-
-****************************************************The sheet represents the state of the smart contract****************************************************
-
 ******************Redeeming******************
 
 User can close a position and redeem the WETHUP3x tokens representing that position. For Redeeming event, collect the values of deposit, borrowing, Total WETHUP3xx of the smart contract, WETH/USDC  price at a state before the position is closed. The WETHUP3x tokens for that position are burnt and the position is closed as discussed in our previous section.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4818d841-8a79-4560-a702-3e624bf48634/Untitled.png)
+| Sr. No.                 | Tx                    | WETH (deposit in Aave)          | USDC (borrow from Aave) | Total WETHUP3x          | Issued      | Contract Value | WETHUP3x Price in USDC | WETH/USDC | Comments |
+|-------------------------|-----------------------|---------------------------------|-------------------------|-------------------------|-------------|----------------|------------------------|-----------|----------|
+|                         |                       | 0                               | 0                       |                         |             |                |                        |           |          |
+| 1                       | Mint (1 WETH)         | 3                               | 2000                    | 1                       | 1           | 1000           | 1000                   | 1000      |          |
+| (state just before Tx2) |                       | 3.15                            | 2200                    | 1                       | 0           |                |                        |           |          |
+| 2                       | Mint (1 WETH)         | 6.15                            | 4200                    | 2.052631579             | 1.052631579 | 1950           | 950                    | 1000      |          |
+|                         |                       |                                 |                         |                         |             |                |                        |           |          |
+|                         |                       |                                 |                         |                         |             |                |                        |           |          |
+| (state before Tx3)      |                       | 6.35                            | 4350                    | 2.052631579             | 0           | 2063.5         | 1005.295               | 1010      |          |
+| 3                       | Mint (2 WETH)         | 12.35                           | 8390                    | 4.01699                 | 2.0093      | 4083.5         | 1005.295               | 1010      |          |
+|                         |                       | 12.71                           | 8476                    | 4.01699                 | 0           | 3344.3         | 823.315                | 930       |          |
+| 4                       | Redeem (1.5 WETHUP3x) | 12.71 - (0.369*12.71) = 8.02001 | 8476-3129.9 = 5346.1    | 4.01699 - 1.5 = 2.56199 | -1.5        | 824.557        | 823.315                | 930       |          |
+|                         |                       |                                 |                         |                         |             |                |                        |           |          |
+|                         |                       |                                 |                         |                         |             |                |                        |           |          |
+|                         |                       |                                 |                         |                         |             |                |                        |           |          |
 
-****************************************************The sheet represents the state of the smart contract****************************************************
+This is how the parameters in smart contract look like when users open or close positions
 
 ******************************************Transferring/Trading******************************************
 
