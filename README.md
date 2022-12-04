@@ -7,9 +7,7 @@ Praxis lets traders have onchain perpetual futures over Aave. Praxis will hold l
 
 For this hackathon, Praxis will implement long perpetual positions over Aave with 3x leverage and issue corresponding WETHUP3x tokens to represent the position.  
 
-*Links of smart contracts deployed on Polygon:* 
-
-## Index
+*Links of smart contracts deployed on Polygon: 0xa7873dFD4610B22f9C88129d01ABc993653CACD6* 
 
 ## 1.Problem Statement
 
@@ -146,7 +144,7 @@ As we are executing the leveraging with flashloans instead of looping, we could 
 
 ### **************************4.1 Deploying over Polygon (For Best DeFi project)**************************
 
-Here are the links to the smart contract addresses deployed on Polygon:
+Here are the links to the smart contract addresses deployed on Polygon: 0xa7873dFD4610B22f9C88129d01ABc993653CACD6 
 
 We believe building such on-chain perpetual futures over polygon network and deeper liquidity pool shall bring trust among the users and attract users to trade perpetuals.
 
