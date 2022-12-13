@@ -1,25 +1,26 @@
 ﻿# Praxis Finance
-Trade with Onchain Perpetual futures built over AAVE's deep liquidity.
-Refer to this contract [ finalpraxisFACTORY.sol ] in "./contracts/finalpraxisFACTORY.sol"
+Trade with Onchain Perpetual futures built over AAVE's deep liquidity.</br>
+Refer to this contract [ finalpraxisFACTORY.sol ] in "./contracts/finalpraxisFACTORY.sol" </br>
 
 ### Next steps/Roadmap
 - [x] Write minimal praxisERC20.sol, praxisFACTORY.sol
 - [x] Explain the project in README.md
+- [ ] Do analysis of fees involved at every step
 - [ ] Generalize the Minting mechanism into an equation
-- [ ] Test UniswapSwapRouter extensively
-- [x] Test interacting with AAVE Pools (supply,withdraw,approve,view functions)
-- [ ] Deploy and verfiy contracts
 - [ ] Analysis of slippage/variable rates on the leverage obtained
 - [ ] Change function visibilities
 - [ ] More robust security review
+- [x] Test interacting with AAVE Pools (supply,withdraw,approve,view functions)
+- [ ] Test UniswapSwapRouter extensively
+
 
 ## Summary
 
-Praxis lets traders have onchain perpetual futures over Aave. Praxis will hold leveraged long positions on behalf of users over Aave. Users shall receive corresponding ERC20 tokens representing the perpetual contracts created with a unique minting, redeeming and pricing mechanism for the ERC20 tokens given to represent a position. This mechanism and the utilization rates of Aave shall let us calculate the value of the position by always taking the funding mechanism into consideration (more on this in the later part). This will make the leveraged positions tradeable which is not the case for most of the counterparts. Ussers are able to create leveraged perpetual positions with Instadapp and earn yield over them. These positions are not tradeable and transferrable as they are not represented by ERC-20 tokens who have a definite value which justifies the price of the position. With Praxis, users can create tradeable leveraged psoitions on deep liquidity of pools like Aave and Compound.
+Praxis lets traders have onchain perpetual futures over Aave. Praxis will hold leveraged long positions on behalf of users over Aave.</br> Users shall receive corresponding ERC20 tokens representing the perpetual contracts created with a unique minting, redeeming and pricing mechanism for the ERC20 tokens given to represent a position.</br> This mechanism and the utilization rates of Aave shall let us calculate the value of the position by always taking the funding mechanism into consideration (more on this in the later part).</br> This will make the leveraged positions tradeable which is not the case for most of the counterparts. Ussers are able to create leveraged perpetual positions with Instadapp and earn yield over them. </br>These positions are not tradeable and transferrable as they are not represented by ERC-20 tokens who have a definite value which justifies the price of the position. With Praxis, users can create tradeable leveraged psoitions on deep liquidity of pools like Aave and Compound.
 
-For this hackathon, Praxis will implement long perpetual positions over Aave WETH pool, with 3x leverage and issue corresponding WETHUP3x tokens to represent the position.
+For this hackathon, Praxis will implement long perpetual positions over Aave WETH pool, with 3x leverage and issue corresponding WETHUP3x tokens to represent the position. </br>
 
-*Contract deployed on PolygonTestnet: 0xa7873dFD4610B22f9C88129d01ABc993653CACD6*
+*Contract deployed on PolygonTestnet: 0xa7873dFD4610B22f9C88129d01ABc993653CACD6*</br>
 
 ## 1.Problem Statement
 
@@ -86,13 +87,13 @@ Closing a position with Aave is equivalent to burning or redeeming the WETHUP3x 
 
 Let’s look at it with an example:
 
-A person had opened a long perpetual future position on WETH for X WETH at 3x leverage. The WETH deposited for this position were 3X while there was already Z WETH deposited through Praxis’ smart contract before this position. Similarly, opening this position shall create a borrowing equivalent to 2X*P USDC (considering ETH/USDC = P during the opening of this position). There shall already be borrowing of K USDC through Praxis’ smart contract before this position. Also consider J ETHUP3x tokens to be minted before this position and H tokens to be issued for this position.
+A person had opened a long perpetual future position on WETH for X WETH at 3x leverage. The WETH deposited for this position were 3X while there was already Z WETH deposited through Praxis’ smart contract before this position. Similarly, opening this position shall create a borrowing equivalent to `2X*P USDC (considering ETH/USDC = P during the opening of this position)`. There shall already be borrowing of K USDC through Praxis’ smart contract before this position. Also consider J ETHUP3x tokens to be minted before this position and H tokens to be issued for this position.
 
-The deposit and borrowing is known to increase in Aave due to interest rate and borrowing rate applied on them through Aave. Thus, if the deposits are kept idle after the initiation of the position, then after time t, total deposit through our smart contract shall be 3X + Z + i and total borrowing through our smart contract be 2X*P + K + r (where r and i are the borrowing rate an interest rate respectively)
+The deposit and borrowing is known to increase in Aave due to interest rate and borrowing rate applied on them through Aave. Thus, if the deposits are kept idle after the initiation of the position, then after time t, total deposit through our smart contract shall be `3X + Z + i` and `total borrowing through our smart contract be 2X*P + K + r` (where r and i are the borrowing rate an interest rate respectively)
 
-The deposit equivalent to this position is H/J * (3X + Z + i) while the borrowing equivalent to this position is H/J * (2X*P + K + r). Thus after closing the position, the funds a user shall receive after repaying the borrowing is H/J * (3X + Z + i - 2X*P - K - r)
+The `deposit equivalent to this position is H/J * (3X + Z + i)` while the borrowing equivalent to this position is H/J * (2X*P + K + r). Thus after closing the position, the funds a user shall receive after repaying the borrowing is H/J * (3X + Z + i - 2X*P - K - r)
 
-AGAIN THE SAME QUESTION, HOW IS PRAXIS DIFFERENT THAN PRAXIS??? Such leveraged positions are opened and closed for year or more now.
+AGAIN THE SAME QUESTION, HOW IS PRAXIS DIFFERENT THAN INSTADAPP??? Such leveraged positions are opened and closed for year or more now.
 
 Praxis is different than Instadapp. Instadapp lets you earn extra yield through this mechanism on your idle funds, we are enabling onchain perp futures which can be traded by users.  Will prove our point once you understand our minting, redeeming and pricing mechanism of WETHUP3x tokens.
 
