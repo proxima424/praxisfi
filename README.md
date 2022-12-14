@@ -18,7 +18,7 @@ Refer to this contract [ finalpraxisFACTORY.sol ] in "./contracts/finalpraxisFAC
 
 Praxis lets traders have onchain perpetual futures over Aave. Praxis will hold leveraged long positions on behalf of users over Aave.</br> Users shall receive corresponding ERC20 tokens representing the perpetual contracts created with a unique minting, redeeming and pricing mechanism for the ERC20 tokens given to represent a position.</br> This mechanism and the utilization rates of Aave shall let us calculate the value of the position by always taking the funding mechanism into consideration (more on this in the later part).</br> This will make the leveraged positions tradeable which is not the case for most of the counterparts. Ussers are able to create leveraged perpetual positions with Instadapp and earn yield over them. </br>These positions are not tradeable and transferrable as they are not represented by ERC-20 tokens who have a definite value which justifies the price of the position. With Praxis, users can create tradeable leveraged psoitions on deep liquidity of pools like Aave and Compound.
 
-For this hackathon, Praxis will implement long perpetual positions over Aave WETH pool, with 3x leverage and issue corresponding WETHUP3x tokens to represent the position. </br>
+As a POC, Praxis has implemented long perpetual positions over Aave WETH pool, with 3x leverage and issue corresponding WETHUP3x tokens to represent the position. </br>
 
 *Contract deployed on PolygonTestnet: 0xa7873dFD4610B22f9C88129d01ABc993653CACD6*</br>
 
