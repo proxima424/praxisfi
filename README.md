@@ -1,4 +1,8 @@
-﻿# Praxis Finance
+﻿# Praxis Finance </br>
+( Moved to a private repo ) </br>
+( This repo gives the basic idea of what PraxisFi is ) </br>
+( All current work goes on in the private repo I'll be releasing soon ) </br>
+
 Trade with Onchain Perpetual futures built over AAVE's deep liquidity.</br>
 Refer to this contract [ finalpraxisFACTORY.sol ] in "./contracts/finalpraxisFACTORY.sol" </br>
 
